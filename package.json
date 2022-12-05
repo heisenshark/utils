@@ -1,0 +1,33 @@
+{
+  "name": "@erbelion/utils",
+  "version": "0.0.1",
+  "description": "TODOTODOTODO",
+  "author": "erbelion",
+  "keywords": [
+    "utils",
+    "node",
+    "browser",
+    "time",
+    "url",
+    "number"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erbelion/utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/erbelion/utils/issues"
+  },
+  "homepage": "https://github.com/erbelion/utils#readme",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "devDependencies": {
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.3"
+  }
+}
