@@ -2,7 +2,7 @@
 
 [![Get package from npm](https://img.shields.io/npm/v/@erbelion/utils?color=blue)](https://www.npmjs.com/package/@erbelion/utils) [![Downloads](https://img.shields.io/npm/dt/@erbelion/utils)](https://www.npmjs.com/package/@erbelion/utils)
 
-This package includes simple javascript utility functions for use in browser and node.js apps.
+A collection of simple javascript utility functions for use in browser and node.js apps.
 
 If you have any ideas what functions to add, feel free to open an [issue](https://github.com/erbelion/utils/issues).
 
@@ -49,6 +49,15 @@ compactNumber(1555555) // 1.6M
 compactNumber(1555555555) // 1.6B
 compactNumber(1555555555555) // 1.6T
 ```
+### random
+
+```
+import { random } from '@erbelion/utils'
+
+random() // 0 or 1
+random(69) // random from 0 to 69
+random(69, 420) // random from 69 to 420
+```
 
 ## URLs
 
@@ -73,5 +82,5 @@ urlParams('https://github.com/erbelion/utils?a=1&b=2') // { a: 1, b: 2 }
 urlParams('') // {}
 
 // if no arg is given, then browser url is taken (window.location.href)
-urlParams() // 
+urlParams()
 ```
